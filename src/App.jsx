@@ -6,7 +6,7 @@ import ContactMe from './components/contactMe';
 
 function App() {
   return (
-    <div className='bg-body min-h-fit'>
+    <div className='bg-body min-h-fit flex flex-col'>
       <Navbar />
       <About />
       <Projects />

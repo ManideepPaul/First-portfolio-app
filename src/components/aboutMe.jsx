@@ -2,12 +2,12 @@ import hero from '../logo/hero.svg'
 
 function About() {
   return (
-    <div className="flex flex-wrap-reverse items-center justify-center md:justify-start md:flex-nowrap lg:justify-start lg:flex-nowrap mx-10 pt-3">
-      <div className="grid place-self-center h-4/5 w-max md:w-6/12 md:mt-40 lg:mt-40 lg:w-6/12  rounded-2xl border-solid mt-10 p-5 mx-5 bg-bg-sec space-y-8">
-        <h2 className="text-5xl md:text-6xl lg:text-7xl font-baloo2 text-text">
+    <div id='home' className="flex flex-wrap-reverse justify-center md:justify-start md:flex-nowrap lg:justify-center lg:flex-nowrap mx-10 lg:w-3/4 lg:self-center pt-3 items-end">
+      <div className="grid place-self-center h-3/5 w-max md:w-1/2 md:mt-40 lg:mt-40 lg:w-1/2 px-5 rounded-2xl border-solid mt-1 p-5 mx-5 bg-bg-sec space-y-8">
+        <h2 className="text-5xl md:text-5xl lg:text-6xl font-baloo2 text-text">
           Hi, I'm Manideep.
         </h2>
-        <h3 className="text-2xl md:text-3xl lg:text-4xl font-baloo2 text-text-secondary">
+        <h3 className="text-xl md:text-2xl lg:text-3xl font-baloo2 text-text-secondary">
           I'm a web developer from India. I love to code functional and simple
           web apps.
         </h3>
@@ -15,8 +15,8 @@ function About() {
           Projects
         </button>
       </div>
-      <div className='flex w-max mt-24 hover:animate-pulse lg:justify-self-end p-5'>
-        <img src={hero} alt="" />
+      <div className='flex w-max mt-24 hover:animate-pulse lg:justify-self-end px-5'>
+        <img src={hero} alt=""/>
       </div>
     </div>
   );
