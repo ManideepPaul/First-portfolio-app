@@ -2,7 +2,7 @@ import { Images } from "../helpers/imageData";
 
 function Projects() {
   return (
-    <div id="projects" className="flex items-center justify-center mx-10 lg:w-3/4 self-center pt-3">
+    <div id="projects" className="flex items-center justify-center mx-5 lg:w-3/4 self-center pt-3">
       <section className="w-full border-solid mt-10 p-5 mx-5 bg-bg-sec rounded-2xl space-y-8">
         <h3 className=" inline-block text-3xl font-baloo2 text-text shadow-lg shadow-backcolor">
           Projects

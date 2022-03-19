@@ -9,7 +9,7 @@ function Navbar() {
   }
 
   return (
-    <nav className={`${!state ? "flex flex-col space-y-5 items-center" : "" }flex items-center lg:self-center justify-between mx-10 lg:w-3/4 pt-3 pb-3 sticky top-0 bg-body z-10`}>
+    <nav className={`${!state ? "flex flex-col space-y-5 items-center" : "" }flex items-center lg:self-center justify-between mx-5 lg:w-3/4 pt-3 pb-3 sticky top-0 bg-body z-10`}>
         <a href="#home"><p className={` font-baloo2 text-text font-bold text-2xl p-2 mx-5`}>Manideep.paul</p></a>
       <div className={`${state ? "hidden" : "flex flex-col space-y-5 items-center"} md:flex text-text mx-5 text-lg font-semibold md:space-x-16`}>
           <a href="#home"><p className=" pt-2 hover:text-text-secondary">Home</p></a>
