@@ -1,6 +1,22 @@
+import React, { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
+
 function ContactMe() {
+  const [state, handleSubmit] = useForm("mrgjljlw")
+  const [showElement, setShowElement] = useState(true)
+  const [value, setValue] = useState('')
+
+  const Submittion = () => {
+    setTimeout(() => {
+      setShowElement(false)
+    }, 5000)
+  }
+
   return (
-    <div id="contactMe" className="flex mx-5 lg:w-3/4 pt-3 flex-col space-y-16 pb-10 md:flex-row lg:flex-row md:items-center lg:items-center self-center">
+    <div
+      id="contactMe"
+      className="flex mx-5 lg:w-3/4 pt-3 flex-col space-y-16 pb-10 md:flex-row lg:flex-row md:items-center lg:items-center self-center"
+    >
       <section className="border-solid mt-10 p-5 mx-5 bg-bg-sec rounded-2xl space-y-8 md:mr-5 md:w-3/4 lg:w-1/2">
         <h3 className="inline-block text-3xl font-baloo2 text-text shadow-lg shadow-backcolor">
           Contact Me
@@ -8,23 +24,40 @@ function ContactMe() {
         <p className="text-xl font-baloo2 text-text-secondary">
           Feel free to to contact me any time, through any method below.
         </p>
-        <div className=" space-y-8 ">
+        <form className=" space-y-8 " onSubmit={handleSubmit}>
           <div>
-            <label className="block mb-6 text-xl font-bold text-text">
+            <label
+              htmlFor="name"
+              className="block mb-6 text-xl font-bold text-text"
+            >
               Name
             </label>
             <input
+              id="name"
               type="text"
+              name="name"
+              value={state.succeeded ? value : null}
               class="w-full border px-4 py-4 bg-body border-backcolor text-text-secondary"
             />
           </div>
           <div>
-            <label className="block mb-6 text-xl font-bold text-text">
+            <label
+              htmlFor="email"
+              className="block mb-6 text-xl font-bold text-text"
+            >
               Email
             </label>
             <input
-              type="text"
+              id="email"
+              type="email"
+              name="email"
+              value={state.succeeded ? value : null}
               class="w-full border px-4 py-4 bg-body border-backcolor text-text-secondary"
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
             />
           </div>
           <div>
@@ -32,15 +65,29 @@ function ContactMe() {
               Message
             </label>
             <textarea
-              name=""
-              id=""
+              id="message"
+              name="message"
+              value={state.succeeded ? value : null}
               className="w-full border px-4 py-4 h-56 bg-body resize-none text-text-secondary border-backcolor"
             ></textarea>
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
           </div>
-          <button className="hover:bg-backcolor bg-body w-max text-center text-text text-xl hover:text-text-secondary border-2 font-bold border-backcolor px-6 py-2  md:text-xl lg:text-2xl lg:px-8 ">
+          <button
+            onClick={Submittion}
+            type="submit"
+            disabled={state.submitting}
+            className="hover:bg-backcolor bg-body w-max text-center text-text text-xl hover:text-text-secondary border-2 font-bold border-backcolor px-6 py-2  md:text-xl lg:text-2xl lg:px-8 "
+          >
             Send it!
           </button>
-        </div>
+        </form>
+        {state.succeeded && showElement ? <p className="text-xl font-baloo2 text-text-secondary">
+          Thanks for joining!
+        </p> : null}
       </section>
 
       {/* contact details */}
