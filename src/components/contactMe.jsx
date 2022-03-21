@@ -93,9 +93,9 @@ function ContactMe() {
 
       <div className="grid mx-10 lg:ml-24">
         <div className="contact grid space-y-2">
-          <p className="text-xl font-baloo2 text-text-secondary">
+          <a href="tel:9122559255" className="text-xl font-baloo2 text-text-secondary">
             912-255-9255
-          </p>
+          </a>
           <a
             href="mailto:17101992m@gmail.com"
             className="text-xl font-baloo2 text-text-secondary"
