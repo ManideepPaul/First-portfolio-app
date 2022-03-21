@@ -105,7 +105,7 @@ function ContactMe() {
           </a>
         </div>
         <div className="links flex mt-16 space-x-5">
-          <a href="#">
+          <a href="https://twitter.com/ManideepPaul17" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 48 48"
@@ -130,7 +130,7 @@ function ContactMe() {
             </svg>
           </a>
 
-          <a href="#">
+          <a href="https://github.com/ManideepPaul" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 48 48"
