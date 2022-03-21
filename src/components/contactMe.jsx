@@ -35,7 +35,7 @@ function ContactMe() {
               id="name"
               type="text"
               name="name"
-              value={state.submitting ? '' : null}
+              value={state.submitting ? '' : undefined}
               class="w-full border px-4 py-4 bg-body border-backcolor text-text-secondary"
             />
           </div>
@@ -50,7 +50,7 @@ function ContactMe() {
               id="email"
               type="email"
               name="email"
-              value={state.submitting ? '' : null}
+              value={state.submitting ? '' : undefined}
               class="w-full border px-4 py-4 bg-body border-backcolor text-text-secondary"
             />
             <ValidationError
@@ -66,7 +66,7 @@ function ContactMe() {
             <textarea
               id="message"
               name="message"
-              value={state.submitting ? '' : null}
+              value={state.submitting ? '' : undefined}
               className="w-full border px-4 py-4 h-56 bg-body resize-none text-text-secondary border-backcolor"
             ></textarea>
             <ValidationError

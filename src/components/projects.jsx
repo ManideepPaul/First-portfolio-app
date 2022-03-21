@@ -13,10 +13,11 @@ function Projects() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 ">
-          {Images.map((image) => {
+          {Images.map((image, key) => {
             return (
               <img
                 src={image}
+                key={key}
                 className="w-full bg-nav h-36 opacity-70 lg:h-72 object-cover hover:opacity-100 hover:shadow-lg rounded-xl hover:shadow-backcolor"
               />
             );
