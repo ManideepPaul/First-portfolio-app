@@ -4,9 +4,8 @@ import { useForm, ValidationError } from "@formspree/react";
 function ContactMe() {
   const [state, handleSubmit] = useForm("mrgjljlw")
   const [showElement, setShowElement] = useState(true)
-  const [value, setValue] = useState('')
 
-  const Submittion = () => {
+  const Submission = () => {
     setTimeout(() => {
       setShowElement(false)
     }, 5000)
@@ -36,7 +35,7 @@ function ContactMe() {
               id="name"
               type="text"
               name="name"
-              value={state.succeeded ? value : null}
+              value={state.submitting ? '' : null}
               class="w-full border px-4 py-4 bg-body border-backcolor text-text-secondary"
             />
           </div>
@@ -51,7 +50,7 @@ function ContactMe() {
               id="email"
               type="email"
               name="email"
-              value={state.succeeded ? value : null}
+              value={state.submitting ? '' : null}
               class="w-full border px-4 py-4 bg-body border-backcolor text-text-secondary"
             />
             <ValidationError
@@ -67,7 +66,7 @@ function ContactMe() {
             <textarea
               id="message"
               name="message"
-              value={state.succeeded ? value : null}
+              value={state.submitting ? '' : null}
               className="w-full border px-4 py-4 h-56 bg-body resize-none text-text-secondary border-backcolor"
             ></textarea>
             <ValidationError
@@ -77,7 +76,7 @@ function ContactMe() {
             />
           </div>
           <button
-            onClick={Submittion}
+            onClick={Submission}
             type="submit"
             disabled={state.submitting}
             className="hover:bg-backcolor bg-body w-max text-center text-text text-xl hover:text-text-secondary border-2 font-bold border-backcolor px-6 py-2  md:text-xl lg:text-2xl lg:px-8 "
