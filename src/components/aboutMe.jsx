@@ -2,7 +2,7 @@ import hero from '../logo/hero.svg'
 
 function About() {
   return (
-    <div id='home' className="flex flex-wrap-reverse justify-center md:justify-start md:flex-nowrap lg:justify-center lg:flex-nowrap mx-5 lg:w-3/4 lg:self-center pt-3 items-end">
+    <div id='home' className="flex flex-wrap-reverse justify-center md:justify-start md:flex-nowrap lg:justify-center lg:flex-nowrap mx-3 lg:w-3/4 lg:self-center pt-3 items-end">
       <div className="grid place-self-center h-3/5 w-max md:w-1/2 md:mt-40 lg:mt-40 lg:w-1/2 px-5 rounded-2xl border-solid mt-1 p-5 mx-5 bg-bg-sec space-y-8">
         <h2 className="text-5xl md:text-5xl lg:text-6xl font-baloo2 text-text">
           Hi, I'm Manideep.

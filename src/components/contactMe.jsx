@@ -14,7 +14,7 @@ function ContactMe() {
   return (
     <div
       id="contactMe"
-      className="flex mx-5 lg:w-3/4 pt-3 flex-col space-y-16 pb-10 md:flex-row lg:flex-row md:items-center lg:items-center self-center"
+      className="flex mx-3 lg:w-3/4 pt-3 flex-col space-y-16 pb-10 md:flex-row lg:flex-row md:items-center lg:items-center self-center"
     >
       <section className="border-solid mt-10 p-5 mx-5 bg-bg-sec rounded-2xl space-y-8 md:mr-5 md:w-3/4 lg:w-1/2">
         <h3 className="inline-block text-3xl font-baloo2 text-text shadow-lg shadow-backcolor">
