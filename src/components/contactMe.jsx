@@ -36,7 +36,7 @@ function ContactMe() {
               type="text"
               name="name"
               value={state.submitting ? '' : undefined}
-              class="w-full border px-4 py-4 bg-body border-backcolor text-text-secondary"
+              className="w-full border px-4 py-4 bg-body border-backcolor text-text-secondary"
             />
           </div>
           <div>
@@ -51,7 +51,7 @@ function ContactMe() {
               type="email"
               name="email"
               value={state.submitting ? '' : undefined}
-              class="w-full border px-4 py-4 bg-body border-backcolor text-text-secondary"
+              className="w-full border px-4 py-4 bg-body border-backcolor text-text-secondary"
             />
             <ValidationError
               prefix="Email"
@@ -119,8 +119,8 @@ function ContactMe() {
                 y2="38.769"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop offset="0" stop-color="#2aa4f4" />
-                <stop offset="1" stop-color="#007ad9" />
+                <stop offset="0" stopColor="#2aa4f4" />
+                <stop offset="1" stopColor="#007ad9" />
               </linearGradient>
               <path
                 fill="url(#_osn9zIN2f6RhTsY8WhY4a)"
@@ -144,8 +144,8 @@ function ContactMe() {
                 y2="23.508"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop offset="0" stop-color="#4c4c4c" />
-                <stop offset="1" stop-color="#343434" />
+                <stop offset="0" stopColor="#4c4c4c" />
+                <stop offset="1" stopColor="#343434" />
               </linearGradient>
               <path
                 fill="url(#rL2wppHyxHVbobwndsT6Ca)"
