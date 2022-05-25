@@ -21,7 +21,7 @@ function Projects() {
                 <img
                   src={image[0]}
                   key={key}
-                  className="w-full bg-nav h-36 opacity-70 lg:h-72 object-cover hover:opacity-100 hover:shadow-lg rounded-xl hover:shadow-backcolor"
+                  className="w-full bg-nav h-36 opacity-70 lg:h-72 object-cover hover:opacity-100 hover:shadow-lg rounded-xl hover:shadow-backcolor hover:scale-110 hover:z-auto transition duration-500"
                 />
               </a>
             );
