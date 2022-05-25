@@ -14,7 +14,7 @@ function Projects() {
           A small gallery of recent projects.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-6 ">
           {Images.map((image, key) => {
             return (
               <a href={image[1]} target="_blank" rel={image[2]}>
