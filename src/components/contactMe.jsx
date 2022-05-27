@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 function ContactMe() {
-  const [state, handleSubmit] = useForm("mrgjljlw")
+  const [state, handleSubmit] = useForm("mqknnlpe")
   const [showElement, setShowElement] = useState(true)
 
   const Submission = () => {
@@ -17,7 +17,7 @@ function ContactMe() {
       className="flex mx-3 w-full lg:w-3/4 pt-3 flex-col space-y-16 pb-10 md:flex-row lg:flex-row md:items-center lg:items-center self-center"
     >
       <section className="border-solid mt-10 p-5 mx-5 bg-bg-sec rounded-2xl space-y-8 md:mr-5 md:w-3/4 lg:w-1/2">
-        <h3 className="inline-block text-3xl font-baloo2 text-text shadow-lg shadow-backcolor">
+        <h3 className="inline-block text-3xl font-baloo2 text-text shadow-lg shadow-backcolor rounded-lg px-2">
           Contact Me
         </h3>
         <p className="text-xl font-baloo2 text-text-secondary">
@@ -97,10 +97,10 @@ function ContactMe() {
             912-255-9255
           </a>
           <a
-            href="mailto:17101992m@gmail.com"
+            href="mailto:webdevmancontact@gmail.com"
             className="text-xl font-baloo2 text-text-secondary"
           >
-            17101992m@gmail.com
+            webdevmancontact@gmail.com
           </a>
         </div>
         <div className="links flex mt-16 space-x-5">
