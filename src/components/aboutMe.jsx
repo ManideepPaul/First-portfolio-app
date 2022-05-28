@@ -11,9 +11,11 @@ function About() {
           I'm a web developer from India. I love to code functional and simple
           web apps.
         </h3>
+        <a href="#projects">
         <button className="hover:bg-backcolor bg-body w-min text-center text-text text-xl hover:text-text-secondary border-2 font-bold border-backcolor px-6 py-2 md:w-min md:text-xl lg:w-min lg:text-2xl lg:px-8 ">
           Projects
         </button>
+        </a>
       </div>
       <div className='flex w-max mt-24 hover:animate-pulse lg:justify-self-end px-5'>
         <img src={hero} alt=""/>
