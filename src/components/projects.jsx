@@ -14,16 +14,20 @@ function Projects() {
           A small gallery of recent projects.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-6">
           {Images.map((image, key) => {
             return (
-              <a href={image[1]} target="_blank" rel={image[2]}>
-                <img
-                  src={image[0]}
-                  key={key}
-                  className="w-full bg-nav h-36 opacity-70 lg:h-72 object-cover hover:opacity-100 hover:shadow-lg rounded-xl hover:shadow-backcolor hover:scale-110 hover:z-auto transition duration-500"
-                />
-              </a>
+              <div className="project hover:scale-110 hover:z-auto transition duration-500 hover:shadow-backcolor hover:shadow-lg text-center rounded-xl">
+                <a href={image.link} target="_blank" className="">
+                  <img
+                    src={image.image}
+                    key={key}
+                    className="w-full bg-nav h-36 opacity-70 lg:h-72 object-cover hover:opacity-100 rounded-xl"
+                  />
+                  <p className="name w-full text-2xl font-baloo2 text-text pt-2">{image.name}</p>
+                  <p className="desc w-full text-xl font-baloo2 inline-block text-text py-1">{image.tech}</p>
+                </a>
+              </div>
             );
           })}
         </div>
