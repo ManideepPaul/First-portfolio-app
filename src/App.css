@@ -1,0 +1,15 @@
+.mainContainer {
+  animation: example 10s ease-in-out infinite;
+}
+
+@keyframes example {
+  0% {
+    background-color: #0a0227;
+  }
+  50% {
+      background-color: rgb(24 24 24);
+    }
+    100% {
+      background-color: #0a0227;
+  }
+}
