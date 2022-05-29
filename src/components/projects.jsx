@@ -25,7 +25,7 @@ function Projects() {
                     className="w-full bg-nav h-36 opacity-70 lg:h-72 object-cover hover:opacity-100 rounded-xl"
                   />
                   <p className="name w-full text-2xl font-baloo2 text-text pt-2">{image.name}</p>
-                  <p className="desc w-full text-xl font-baloo2 inline-block text-text py-1">{image.tech}</p>
+                  <p className="techStack w-full text-xl font-bold font-baloo2 inline-block text-text py-1">{image.tech}</p>
                 </a>
               </div>
             );
