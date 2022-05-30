@@ -14,6 +14,7 @@ function Navbar() {
       <div className={`${state ? "hidden" : "flex flex-col space-y-5 items-center"} md:flex text-text mx-5 text-lg font-semibold md:space-x-16`}>
           <a href="#home"><p className=" pt-2 hover:text-text-secondary">Home</p></a>
           <a href="#projects"><p className=" pt-2 hover:text-text-secondary">Projects</p></a>
+          <a href="#skills"><p className=" pt-2 hover:text-text-secondary">Skills</p></a>
           <a href="#contactMe"><p className="hover:bg-backcolor hover:text-text-secondary border-2 font-bold border-backcolor px-6 py-2 rounded-lg">Contact Me</p></a>
       </div>
       <div onClick={toggle} className="md:hidden mx-5">
