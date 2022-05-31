@@ -20,7 +20,7 @@ const Skills = () => {
       <h3 className=" inline-block text-3xl font-baloo2 text-text shadow-lg shadow-backcolor rounded-lg px-2 self-start">
           Skills
         </h3>
-      <div className="skillItems animate flex justify-center text-center gap-5 item-center" onMouseEnter={remove} onMouseLeave={add}>
+      <div className="skillItems animate flex justify-center text-center gap-5 item-center" onMouseOver={remove} onMouseLeave={add}>
         {SkillData.map((item, key) => {
           return (
             <div className="flex justify-center flex-col items-center bg-bg-sec w-36 h-36 rounded-md" key={key}>
