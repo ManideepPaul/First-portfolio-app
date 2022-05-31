@@ -27,8 +27,11 @@
 }
 .skillItems {
   position: absolute;
-  animation: move linear 25s infinite;
   bottom: 15px;
+}
+
+.animate {
+  animation: move linear 25s infinite;
 }
 
 
