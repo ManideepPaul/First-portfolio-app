@@ -1,13 +1,14 @@
 import { SkillData } from "../helpers/skillData";
-const SkillItems = document.querySelector('.skillItems')
 
 const Skills = () => {
-
+    
     const remove = () => {
+        const SkillItems = document.querySelector('.skillItems')
         SkillItems.style.animationPlayState = 'paused';
     }
     
     const add = () => {
+        const SkillItems = document.querySelector('.skillItems')
         SkillItems.style.animationPlayState = 'running';
     }
 
